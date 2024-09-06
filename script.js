@@ -15,18 +15,15 @@ document.getElementById('uploadForm').addEventListener('submit', function(e) {
         img.onload = function() {
             const canvas = document.getElementById('canvas');
             const ctx = canvas.getContext('2d');
-            const frame = document.getElementById('frame');
             
-            canvas.width = frame.width;
-            canvas.height = frame.height;
+            canvas.width = img.width;
+            canvas.height = img.height;
             
             // Limpiar el canvas
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             
             // Dibujar la imagen subida centrada en el canvas
-            const x = (canvas.width - img.width) / 2;
-            const y = (canvas.height - img.height) / 2;
-            ctx.drawImage(img, x, y, img.width, img.height);
+            ctx.drawImage(img, 0, 0, img.width, img.height);
             
             // Convertir la imagen a blanco y negro
             const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
