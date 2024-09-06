@@ -3,8 +3,10 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #fdebd0;
-    position: relative;
+    background-image: url('ruta/a/tu/imagen-en-blanco-y-negro.jpg'); /* Reemplaza con la ruta correcta */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h1 {
@@ -24,31 +26,4 @@ form {
 
 canvas {
     border: 1px solid #000;
-}
-
-/* Crear manchas en el fondo */
-body::before {
-    content: "";
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 200px;
-    height: 200px;
-    background-color: #f0b27a;
-    border-radius: 50%;
-    opacity: 0.5;
-    z-index: -1;
-}
-
-body::after {
-    content: "";
-    position: absolute;
-    top: 60%;
-    left: 70%;
-    width: 300px;
-    height: 300px;
-    background-color: #f0b27a;
-    border-radius: 50%;
-    opacity: 0.5;
-    z-index: -1;
 }
