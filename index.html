@@ -1,31 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador de Carteles "Se Busca"</title>
-    <style>
-        /* Agregar estilo para la vista previa */
-        #posterPreview {
-            border: 2px solid #ccc;
-            margin-top: 20px;
-            text-align: center; /* Centrar el contenido */
-        }
-        canvas {
-            border: 1px solid black; /* Opcional: para ver los bordes del canvas */
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            text-align: center;
-        }
-    </style>
+    <title>Mi Proyecto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Generador de Carteles "Se Busca"</h1>
-    <input type="file" id="imageUpload" accept="image/*">
-    <button onclick="generatePoster()">Generar Cartel</button>
-    <div id="posterPreview"></div>
+    <h1>Bienvenido a Mi Proyecto</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="photo" accept="image/*">
+        <button type="submit">Subir Foto</button>
+    </form>
+    <canvas id="canvas"></canvas>
     <script src="script.js"></script>
 </body>
 </html>
