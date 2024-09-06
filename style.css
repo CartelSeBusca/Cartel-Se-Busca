@@ -1,15 +1,22 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0 auto;
+    background-color: #f4f4f4;
+    margin: 0;
     padding: 20px;
 }
 
-form {
-    margin: 20px 0;
+h1 {
+    color: #8b0000;
 }
 
-#posterPreview img {
-    width: 300px;
+form {
+    margin: 20px auto;
+}
+
+#posterPreview canvas {
+    width: 100%;
+    max-width: 600px;
     margin-top: 20px;
+    border: 2px solid #000;
 }
