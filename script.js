@@ -2,6 +2,12 @@ document.getElementById('uploadForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const fileInput = document.getElementById('fileInput');
     const file = fileInput.files[0];
+    
+    if (!file) {
+        alert("Por favor, selecciona un archivo.");
+        return;
+    }
+    
     const reader = new FileReader();
     
     reader.onload = function(event) {
