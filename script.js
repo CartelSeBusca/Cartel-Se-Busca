@@ -23,14 +23,19 @@ function generatePoster() {
 
                 // Agregar un marco de cartel
                 ctx.strokeStyle = 'black';
-                ctx.lineWidth = 10;
+                ctx.lineWidth = 8;  // Ajustar el grosor del marco
                 ctx.strokeRect(0, 0, canvas.width, canvas.height);
 
                 // Agregar texto de "Se Busca"
-                ctx.font = '30px Arial';
-                ctx.fillStyle = 'black';
+                ctx.font = 'bold 50px "Times New Roman", serif';  // Fuente estilo viejo oeste
+                ctx.fillStyle = 'white';  // Color del texto
                 ctx.textAlign = 'center';
-                ctx.fillText('SE BUSCA', canvas.width / 2, 40); // Texto en la parte superior
+                ctx.textBaseline = 'top';
+                ctx.shadowColor = 'black';  // Sombra del texto
+                ctx.shadowOffsetX = 2;
+                ctx.shadowOffsetY = 2;
+                ctx.shadowBlur = 2;
+                ctx.fillText('SE BUSCA', canvas.width / 2, 20);  // Ajustar la posición vertical
 
                 // Limpiar el contenedor de vista previa
                 preview.innerHTML = '';
@@ -45,4 +50,3 @@ function generatePoster() {
         alert("Por favor, selecciona una imagen.");
     }
 }
-
