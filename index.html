@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de Carteles "Se Busca"</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Agregar estilo para la vista previa */
+        #posterPreview {
+            border: 2px solid #ccc;
+            margin-top: 20px;
+            text-align: center; /* Centrar el contenido */
+        }
+        canvas {
+            border: 1px solid black; /* Opcional: para ver los bordes del canvas */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Generador de Carteles "Se Busca" del Viejo Oeste</h1>
-    <p>Sube tu foto y crea tu propio cartel del estilo del viejo oeste.</p>
-    <form id="uploadForm">
-        <label for="imageUpload">Selecciona tu foto:</label>
-        <input type="file" id="imageUpload" accept="image/*">
-        <button type="button" onclick="generatePoster()">Generar Cartel</button>
-    </form>
+    <h1>Generador de Carteles "Se Busca"</h1>
+    <input type="file" id="imageUpload" accept="image/*">
+    <button onclick="generatePoster()">Generar Cartel</button>
     <div id="posterPreview"></div>
-
     <script src="script.js"></script>
 </body>
 </html>
