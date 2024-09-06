@@ -3,7 +3,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-image: url('https://images.pexels.com/photos/172278/pexels-photo-172278.jpeg');
+    background-image: url('nombre-de-tu-imagen.jpg'); /* Reemplaza con el nombre de tu imagen */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
