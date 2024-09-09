@@ -35,11 +35,32 @@ body {
     border: 2px solid #000; /* Opcional: Añade un borde negro para destacar */
 }
 
+#leyenda {
+    position: absolute;
+    bottom: 20px; /* Ajusta según el espacio disponible */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Para mayor legibilidad */
+}
+
 .controls {
     margin-top: 20px;
 }
 
 input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+select {
     padding: 10px;
     font-size: 16px;
     border: 2px solid #ccc;
