@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #ffffff; /* Fondo blanco */
 }
 
 .container {
@@ -36,5 +36,8 @@ body {
 
 input[type="file"] {
     margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
-
