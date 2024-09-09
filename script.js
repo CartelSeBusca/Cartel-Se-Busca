@@ -11,8 +11,7 @@ document.getElementById('upload').addEventListener('change', function(event) {
 });
 
 document.getElementById('download').addEventListener('click', function() {
-    const poster = document.querySelector('.poster');
-    html2canvas(poster).then(canvas => {
+    html2canvas(document.querySelector('.poster')).then(canvas => {
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/png');
         link.download = 'cartel-se-busca.png';
