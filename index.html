@@ -3,29 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('se-busca-03.png'); /* Cambia el nombre de tu imagen aquí */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            font-size: 3em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-    </style>
+    <title>Generador de Carteles "Se Busca"</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>¡Bienvenido a Mi Página Web4!</h1>
+    <div class="container">
+        <h1>Generador de Carteles "Se Busca"</h1>
+        <div class="poster">
+            <img id="fondoCartel" src="fondo-cartel.png" alt="Fondo del Cartel">
+            <img id="imagenUsuario" alt="Imagen del Usuario">
+        </div>
+        <input type="file" id="upload" accept="image/*">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
