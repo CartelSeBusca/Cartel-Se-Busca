@@ -10,11 +10,6 @@ document.getElementById('upload').addEventListener('change', function(event) {
     }
 });
 
-document.getElementById('leyendaSelect').addEventListener('change', function(event) {
-    const textoLeyenda = event.target.value;
-    document.getElementById('textoLeyenda').textContent = textoLeyenda;
-});
-
 document.getElementById('download').addEventListener('click', function() {
     // Usar html2canvas para capturar la imagen del cartel con el filtro aplicado
     html2canvas(document.querySelector('.poster'), { useCORS: true }).then(canvas => {
