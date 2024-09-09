@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crea tu cartel</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('nombre-de-tu-imagen.jpg'); /* Cambia el nombre de tu imagen aquí */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
-    <h1>Crea tu cartel</h1>
-    <div class="image-container">
-        <canvas id="canvas"></canvas>
-    </div>
-    <form id="uploadForm" enctype="multipart/form-data">
-        <input type="file" id="fileInput" accept="image/*">
-        <button type="submit">Procesar Imagen</button>
-    </form>
-    <script src="script.js"></script>
+    <h1>¡Bienvenido a Mi Página Web!</h1>
 </body>
 </html>
