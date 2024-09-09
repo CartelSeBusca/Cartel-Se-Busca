@@ -11,8 +11,8 @@ document.getElementById('upload').addEventListener('change', function(event) {
 });
 
 document.getElementById('download').addEventListener('click', function() {
-    // Usar html2canvas para capturar la imagen del cartel con el filtro aplicado
-    html2canvas(document.querySelector('.poster'), { useCORS: true }).then(canvas => {
+    // Usar html2canvas para capturar la imagen del cartel, sin filtro en el fondo
+    html2canvas(document.querySelector('.poster')).then(canvas => {
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/png');
         link.download = 'cartel-se-busca.png';
