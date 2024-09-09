@@ -13,9 +13,9 @@ document.getElementById('upload').addEventListener('change', function(event) {
 document.getElementById('download').addEventListener('click', function() {
     html2canvas(document.querySelector('.poster')).then(canvas => {
         const context = canvas.getContext('2d');
+        
+        // Crear un nuevo canvas para la imagen en blanco y negro
         const img = document.getElementById('imagenUsuario');
-
-        // Re-dibujar la imagen del usuario en blanco y negro en un nuevo canvas
         const imgCanvas = document.createElement('canvas');
         imgCanvas.width = img.width;
         imgCanvas.height = img.height;
@@ -32,9 +32,13 @@ document.getElementById('download').addEventListener('click', function() {
 
         imgContext.putImageData(imgData, 0, 0);
 
-        // Añadir la imagen en blanco y negro al canvas principal
-        context.drawImage(imgCanvas, 0, 0, imgCanvas.width, imgCanvas.height, 
-                          img.x, img.y, img.width, img.height);
+        // Dibujar el fondo del cartel en el canvas principal
+        const poster = document.querySelector('.poster');
+        const posterImg = poster.querySelector('#fondoCartel');
+        context.drawImage(posterImg, 0, 0, canvas.width, canvas.height);
+
+        // Dibujar la imagen en blanco y negro en el canvas principal
+        context.drawImage(imgCanvas, img.x, img.y, img.width, img.height);
 
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/png');
