@@ -1,1 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.poster {
+    position: relative;
+    display: inline-block;
+}
+
+#fondoCartel {
+    width: 400px; /* Ajusta según el tamaño de tu cartel de fondo */
+    height: auto;
+}
+
+#imagenUsuario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    border: 2px solid #000; /* Opcional: Añade un borde negro para destacar */
+}
+
+input[type="file"] {
+    margin-top: 20px;
+}
 
