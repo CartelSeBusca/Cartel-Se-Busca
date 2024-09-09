@@ -16,7 +16,6 @@ body {
     position: relative;
     display: inline-block;
     margin-bottom: 20px; /* Espacio debajo del cartel */
-    filter: grayscale(100%); /* Aplica filtro en blanco y negro al contenedor */
 }
 
 #fondoCartel {
@@ -32,6 +31,7 @@ body {
     width: 180px;
     height: 250px;
     object-fit: cover;
+    filter: grayscale(100%); /* Aplica filtro en blanco y negro solo a la imagen del usuario */
     border: 2px solid #000; /* Opcional: Añade un borde negro para destacar */
 }
 
